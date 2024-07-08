@@ -22,7 +22,7 @@ public class Grazie  {
     @FindBy(css = "[href='/ai/#plans-and-pricing']")
     private WebElement tafifButton;
 
-    public Boolean checkIfplayVideoButtonIsClickable() {
+    public Boolean checkIfPlayVideoButtonIsClickable() {
         System.out.println("Проверка активности кнопки запуска видео");
         return playVideoButton.isEnabled();
     }
@@ -41,10 +41,4 @@ public class Grazie  {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(num - 1));
     }
-
-
-
-
-
-
 }
