@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Grazie  {
+    private final Logger LOG = LoggerFactory.getLogger(Grazie.class);
     WebDriver driver;
 
     @FindBy(css = "[aria-label='Play video']")
@@ -23,7 +26,7 @@ public class Grazie  {
     private WebElement tafifButton;
 
     public Boolean checkIfPlayVideoButtonIsClickable() {
-        System.out.println("Проверка активности кнопки запуска видео");
+        LOG.info("Проверка активности кнопки запуска видео");
         return playVideoButton.isEnabled();
     }
 
@@ -33,7 +36,7 @@ public class Grazie  {
     }
 
     public void tafifButtonClick() {
-        System.out.println("Перешли на страницу тарифа");
+        LOG.info("Перешли на страницу тарифа");
         tafifButton.click();
     }
 
