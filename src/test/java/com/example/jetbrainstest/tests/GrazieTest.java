@@ -17,7 +17,6 @@ public class GrazieTest extends BaseTest {
 
     private Grazie Grazie;
 
-
     @BeforeEach
     @Override
     public void setUp() {
@@ -28,8 +27,8 @@ public class GrazieTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка, что кнопка видео активна")
-    public void checkIfplayVideoButtonIsClickable() {
-        assertTrue(Grazie.checkIfplayVideoButtonIsClickable(), "Кнопка скачивания не активна");
+    public void checkIfPlayVideoButtonIsClickable() {
+        assertTrue(Grazie.checkIfPlayVideoButtonIsClickable(), "Кнопка скачивания не активна");
     }
 
     @Test
