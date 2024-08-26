@@ -20,7 +20,7 @@ public class DecompilerTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка активности кнопки Get dotPeek")
-    public void getDotPeekButtonIsActive() {
+    public void DotPeekIsActive() {
         decompilerPage = new DecompilerPage(getDriver());
         Assertions.assertTrue(decompilerPage.GetDotPeekIsActive(), "Get dotPeek кнопка не активна");
     }

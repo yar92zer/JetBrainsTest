@@ -9,7 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 // page_url = https://www.jetbrains.com/decompiler/
 public class DecompilerPage {
     WebDriver driver;
-    @FindBy(css = "[data-test='button']")
+    @FindBy(css =".decompiler-header-section__button.wt-offset-top-32")
+    private WebElement DotPeekButton;
+
+
+    @FindBy(css = ".menu-second__download-button")
     private WebElement downloadButton;
 
     public boolean checkIfDownloadButtonIsClickable() {
