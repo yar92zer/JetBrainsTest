@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 // page_url = https://www.jetbrains.com/decompiler/
 public class DecompilerPage {
     WebDriver driver;
-    @FindBy(css =".decompiler-header-section__button.wt-offset-top-32")
+    @FindBy(css = ".decompiler-header-section__button.wt-offset-top-32")
     private WebElement DotPeekButton;
 
 
