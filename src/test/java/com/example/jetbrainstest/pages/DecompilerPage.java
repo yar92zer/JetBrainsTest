@@ -12,7 +12,6 @@ public class DecompilerPage {
     @FindBy(css = ".decompiler-header-section__button.wt-offset-top-32")
     private WebElement DotPeekButton;
 
-
     @FindBy(css = ".menu-second__download-button")
     private WebElement downloadButton;
 
