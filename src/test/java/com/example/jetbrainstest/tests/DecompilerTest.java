@@ -29,7 +29,7 @@ public class DecompilerTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("Проверкаб что конопка скчивание активвна")
+    @DisplayName("Проверка что конопка скчивание активвна")
     public void buttonCheck() {
         Assertions.assertTrue(decompilerPage.checkIfDownloadButtonIsClickable(), "Кнопка скачивание не активна");
     }

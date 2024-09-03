@@ -1,19 +1,21 @@
 package com.example.jetbrainstest.pages;
 
 
+import com.example.jetbrainstest.AllureLogger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 // page_url = https://www.jetbrains.com/decompiler/
 public class DecompilerPage {
 
-    private final Logger LOG = LoggerFactory.getLogger(DecompilerPage.class);
-
+    private final AllureLogger LOG = new AllureLogger(LoggerFactory.getLogger(DecompilerPage.class));
     WebDriver driver;
+
+
     @FindBy(css = ".decompiler-header-section__button.wt-offset-top-32")
     private WebElement DotPeekButton;
 
