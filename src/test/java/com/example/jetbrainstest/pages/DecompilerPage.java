@@ -2,6 +2,7 @@ package com.example.jetbrainstest.pages;
 
 
 import com.example.jetbrainstest.AllureLogger;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,12 +23,13 @@ public class DecompilerPage {
     @FindBy(css = ".menu-second__download-button")
     private WebElement downloadButton;
 
+    @Step("Кнопка Download активна")
     public boolean checkIfDownloadButtonIsClickable() {
         LOG.info("Проверка активности кнопки Download");
         return downloadButton.isEnabled();
     }
-
-    public boolean GetDotPeekIsActive() {
+    @Step("Кнопка 'Get dotPeek' доступна")
+    public boolean getDotPeekIsActive() {
         LOG.info("Проверка доступности кнопки 'Get dotPeek'");
         return downloadButton.isEnabled();
     }
