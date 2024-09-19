@@ -1,5 +1,6 @@
 package com.example.jetbrainstest.tests;
 
+import com.example.jetbrainstest.AllureAttachmentsManager;
 import com.example.jetbrainstest.pages.DecompilerPage;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
