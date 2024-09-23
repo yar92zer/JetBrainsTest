@@ -23,7 +23,6 @@ public class DecompilerTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка активности кнопки Get dotPeek")
-    @Step("Get dotPeek кнопка не активна")
     public void DotPeekIsActive() {
         decompilerPage = new DecompilerPage(getDriver());
         Assertions.assertTrue(decompilerPage.getDotPeekIsActive(), "Get dotPeek кнопка не активна");
