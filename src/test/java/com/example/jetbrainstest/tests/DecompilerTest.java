@@ -1,13 +1,16 @@
 package com.example.jetbrainstest.tests;
 
 import com.example.jetbrainstest.AllureAttachmentsManager;
+import com.example.jetbrainstest.MyExtensions;
 import com.example.jetbrainstest.pages.DecompilerPage;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
+@ExtendWith(MyExtensions.class)
 public class DecompilerTest extends BaseTest {
 
     private DecompilerPage decompilerPage;
