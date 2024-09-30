@@ -6,7 +6,7 @@ import org.junit.jupiter.api.extension.ExtensionContext;
 public class MyExtensions implements AfterTestExecutionCallback {
 
     @Override
-    public void afterTestExecution(ExtensionContext extensionContext) throws Exception {
+    public void afterTestExecution(ExtensionContext extensionContext) {
         if (extensionContext.getExecutionException().isPresent())  AllureAttachmentsManagerS.screenshot();
     }
 }
