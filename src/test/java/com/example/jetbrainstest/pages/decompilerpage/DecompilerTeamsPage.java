@@ -16,30 +16,30 @@ public class DecompilerTeamsPage {
 
 
     @FindBy(xpath = "//a[aria-label='Close cookies banner']")
-    private WebElement CloseCookiesBannerTeam;
+    private WebElement closeCookiesBannerTeam;
 
     @FindBy(xpath = "//a[@type='button'][normalize-space()='Buy dotUltimate']")
-    private WebElement BuyDotUltimateTeam;
+    private WebElement buyDotUltimateTeam;
 
     @FindBy(xpath = " //a[normalize-space()='Our Commitment' and contains(@class, 'menu-item')]")
-    private WebElement OurCommitmentTeam;
+    private WebElement ourCommitmentTeam;
 
     public String OurCommitmentTeamTeansition() {
         LOG.info("Перход в раздел OurCommitment");
-        OurCommitmentTeam.click();
+        ourCommitmentTeam.click();
         return getUrl();
     }
 
 
     public String BuyDotUltimateTeamTransition() {
         LOG.info("Перход в раздел BuyDotUltimate");
-        BuyDotUltimateTeam.click();
+        buyDotUltimateTeam.click();
         return getUrl();
     }
 
     public String CloseCookiesBannerTeam() {
         LOG.info("Closing cookies banner");
-        CloseCookiesBannerTeam.click();
+        closeCookiesBannerTeam.click();
         return getUrl();
     }
 

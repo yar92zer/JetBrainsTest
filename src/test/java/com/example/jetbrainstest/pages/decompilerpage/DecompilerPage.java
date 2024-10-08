@@ -23,61 +23,61 @@ public class DecompilerPage {
     private WebElement downloadButton;
 
     @FindBy(xpath = "//a[@href='/decompiler/whatsnew/']")
-    private WebElement WhatNewButton;
+    private WebElement whatNewButton;
 
     @FindBy(xpath = "//a[normalize-space()='Features']")
-    private WebElement FeaturesButton;
+    private WebElement featuresButton;
 
     @FindBy(xpath = "//a[normalize-space()='Docs & Demos']")
-    private WebElement DocsDemosButton;
+    private WebElement docsDemosButton;
 
     @FindBy(xpath = "//a[contains(@class, 'rs-link_mode_rock') and contains(@class, 'wt-col-inline')]")
-    private WebElement PartOfdotUltimateButton;
+    private WebElement partOfdotUltimateButton;
 
     @FindBy(xpath = "//a[normalize-space()='More features']")
-    private WebElement MoreFeaturesButton;
+    private WebElement moreFeaturesButton;
 
     @FindBy(xpath = "//h3[normalize-space()='ReSharper']")
-    private WebElement ReSharperButton;
+    private WebElement reSharperButton;
 
     @FindBy(xpath = "//h3[normalize-space()='Rider']")
-    private WebElement RiderButton;
+    private WebElement riderButton;
 
     @FindBy(xpath = "//p[normalize-space()='The Visual Studio extension for C++ developers']")
-    private WebElement ReSharperCButton;
+    private WebElement reSharperCButton;
 
     @FindBy(xpath = "//h3[normalize-space()='dotTrace']")
-    private WebElement DotTraceButton;
+    private WebElement dotTraceButton;
 
     @FindBy(xpath = "//h3[normalize-space()='dotMemory']")
-    private WebElement DotMemoryButton;
+    private WebElement dotMemoryButton;
 
     @FindBy(xpath = "//p[normalize-space()='.NET unit test runner and code coverage tool']")
-    private WebElement DotCoverButton;
+    private WebElement dotCoverButton;
 
     @FindBy(xpath = "//a[@data-focus-method='mouse']")
     private WebElement dotPeekButton;
 
     @FindBy(xpath = "//a[normalize-space()='Learn more']")
-    private WebElement LearnMoreButton;
+    private WebElement learnMoreButton;
 
     @FindBy(xpath = "//a[normalize-space()='Community forum']")
-    private WebElement CommunityForumButton;
+    private WebElement communityForumButton;
 
     @FindBy(xpath = "//a[normalize-space()='Bug and issue tracker']")
-    private WebElement BugAndIssueTrackerButton;
+    private WebElement bugAndIssueTrackerButton;
 
     @FindBy(xpath = "//a[normalize-space()='.NET Tools blog']")
-    private WebElement NetToolsBlogButton;
+    private WebElement netToolsBlogButton;
 
     @FindBy(xpath = "//a[normalize-space()='@dotpeek on X']")
-    private WebElement DotpeekOnXButton;
+    private WebElement dotpeekOnXButton;
 
     @FindBy(xpath = "//a[normalize-space()='IntelliJ IDEA']")
-    private WebElement IntellijIdeaButton;
+    private WebElement intellijIdeaButton;
 
     @FindBy(xpath = "//a[normalize-space()='Privacy & Security']")
-    private WebElement PrivacyAndSecurityButton;
+    private WebElement privacyAndSecurityButton;
 
 
     public boolean checkIfDownloadButtonIsClickable() {
@@ -92,57 +92,57 @@ public class DecompilerPage {
 
     public boolean getWatSNewIsActive() {
         LOG.info("Проверка доступности кнопки 'What's New'");
-        return WhatNewButton.isEnabled();
+        return whatNewButton.isEnabled();
     }
 
     public boolean getFeaturesIsActive() {
         LOG.info("Проверка доступности кнопки 'Features'");
-        return FeaturesButton.isEnabled();
+        return featuresButton.isEnabled();
     }
 
     public boolean getDocsDemosIsActive() {
         LOG.info("Проверка доступности кнопки 'Docs & Demos'");
-        return DocsDemosButton.isEnabled();
+        return docsDemosButton.isEnabled();
     }
 
     public boolean getPartOfdotUltimateIsActive() {
         LOG.info("Проверка доступности кнопки 'part of dotUltimate'");
-        return PartOfdotUltimateButton.isEnabled();
+        return partOfdotUltimateButton.isEnabled();
     }
 
     public boolean getMoreFeaturesIsActive() {
         LOG.info("Проверка доступности кнопки 'MoreFeatures'");
-        return MoreFeaturesButton.isEnabled();
+        return moreFeaturesButton.isEnabled();
     }
 
     public boolean getReSharperIsActive() {
         LOG.info("Проверка доступности кнопки'ReSharper'");
-        return ReSharperButton.isEnabled();
+        return reSharperButton.isEnabled();
     }
 
     public boolean getRiderIsActive() {
         LOG.info("Проверка доступности кнопки'Rider'");
-        return RiderButton.isEnabled();
+        return riderButton.isEnabled();
     }
 
     public boolean getReSharperCIsActive() {
         LOG.info("Проверка доступности кнопки'ReSharperC++'");
-        return ReSharperCButton.isEnabled();
+        return reSharperCButton.isEnabled();
     }
 
     public boolean getDotTraceIsActive() {
         LOG.info("Проверка доступности кнопки 'dotTrace'");
-        return DotTraceButton.isEnabled();
+        return dotTraceButton.isEnabled();
     }
 
     public boolean getDotMemoryIsActive() {
         LOG.info("Проверка доступности кнопки 'dotMemory'");
-        return DotMemoryButton.isEnabled();
+        return dotMemoryButton.isEnabled();
     }
 
     public boolean getDotCoverIsActive() {
         LOG.info("Проверка доступности кнопки 'dotCover'");
-        return DotCoverButton.isEnabled();
+        return dotCoverButton.isEnabled();
     }
 
     public boolean getdotPeekIsActive() {
@@ -152,48 +152,48 @@ public class DecompilerPage {
 
     public boolean getLearnMoreIsActive() {
         LOG.info("Проверка доступности кнопки 'Learn more'");
-        return LearnMoreButton.isEnabled();
+        return learnMoreButton.isEnabled();
     }
 
     public boolean getCommunityForumIsActive() {
         LOG.info("Проверка доступности кнопки'Community forum'");
-        return CommunityForumButton.isEnabled();
+        return communityForumButton.isEnabled();
     }
 
     public boolean getBugAndIssueTrackerIsActive() {
         LOG.info("Проверка доступности кнопки 'Bug and issue tracker'");
-        return BugAndIssueTrackerButton.isEnabled();
+        return bugAndIssueTrackerButton.isEnabled();
     }
 
     public boolean getNetToolsBlogIsActive() {
         LOG.info("Проверка доступности кнопки '.NET Tools blog'");
-        return NetToolsBlogButton.isEnabled();
+        return netToolsBlogButton.isEnabled();
     }
 
     public boolean getDotpeekOnXIsActive() {
         LOG.info("Проверка доступности кнопки 'Dotpeek on X'");
-        return DotpeekOnXButton.isEnabled();
+        return dotpeekOnXButton.isEnabled();
     }
 
     public boolean getIntellijIdeaIsActive() {
         LOG.info("Проверка доступности кнопки'IntelliJ IDEA'");
-        return IntellijIdeaButton.isEnabled();
+        return intellijIdeaButton.isEnabled();
     }
 
     public boolean getPrivacyAndSecurityIsActive() {
         LOG.info("Проверка доступности кнопки 'Privacy & Security'");
-        return PrivacyAndSecurityButton.isEnabled();
+        return privacyAndSecurityButton.isEnabled();
     }
 
     public String PrivacyAndSecurityTransition() {
         LOG.info("Переход на страницу privacy-security");
-        PrivacyAndSecurityButton.click();
+        privacyAndSecurityButton.click();
         return driver.getCurrentUrl();
     }
 
     public String LearnMoreButtonTransition() {
         LOG.info("Переход на страницу dotnet");
-        LearnMoreButton.click();
+        learnMoreButton.click();
         return driver.getCurrentUrl();
     }
 
