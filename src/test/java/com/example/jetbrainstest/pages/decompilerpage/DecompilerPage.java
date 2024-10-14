@@ -17,7 +17,7 @@ public class DecompilerPage {
 
 
     @FindBy(css = ".decompiler-header-section__button.wt-offset-top-32")
-    private WebElement DotPeekButton;
+    private WebElement upDotPeekButton;
 
     @FindBy(xpath = "//span[normalize-space()='Download']")
     private WebElement downloadButton;
@@ -55,8 +55,8 @@ public class DecompilerPage {
     @FindBy(xpath = "//p[normalize-space()='.NET unit test runner and code coverage tool']")
     private WebElement dotCoverButton;
 
-    @FindBy(xpath = "//a[@data-focus-method='mouse']")
-    private WebElement dotPeekButton;
+    @FindBy(xpath = "//*[@id=\"overview-content\"]/section[3]/div/div[2]/a")
+    private WebElement downDotPeekButton;
 
     @FindBy(xpath = "//a[normalize-space()='Learn more']")
     private WebElement learnMoreButton;
@@ -85,9 +85,9 @@ public class DecompilerPage {
         return downloadButton.isEnabled();
     }
 
-    public boolean getDotPeekIsActive() {
+    public boolean getUpDotPeekIsActive() {
         LOG.info("Проверка доступности кнопки 'Get dotPeek'");
-        return DotPeekButton.isEnabled();
+        return upDotPeekButton.isEnabled();
     }
 
     public boolean getWatSNewIsActive() {
@@ -145,9 +145,9 @@ public class DecompilerPage {
         return dotCoverButton.isEnabled();
     }
 
-    public boolean getdotPeekIsActive() {
+    public boolean getDownDotPeekIsActive() {
         LOG.info("Проверка доступности кнопки 'dotPeek'");
-        return dotPeekButton.isEnabled();
+        return downDotPeekButton.isEnabled();
     }
 
     public boolean getLearnMoreIsActive() {
@@ -185,13 +185,13 @@ public class DecompilerPage {
         return privacyAndSecurityButton.isEnabled();
     }
 
-    public String PrivacyAndSecurityTransition() {
+    public String privacyAndSecurityTransition() {
         LOG.info("Переход на страницу privacy-security");
         privacyAndSecurityButton.click();
         return driver.getCurrentUrl();
     }
 
-    public String LearnMoreButtonTransition() {
+    public String learnMoreButtonTransition() {
         LOG.info("Переход на страницу dotnet");
         learnMoreButton.click();
         return driver.getCurrentUrl();

@@ -29,137 +29,137 @@ public class DecompilerTest extends BaseTest {
 
     @Test
     @DisplayName("Проверка активности кнопки Get dotPeek")
-    public void DotPeekIsActive() {
-        Assertions.assertTrue(decompilerPage.getDotPeekIsActive(), "Get dotPeek кнопка не активна");
+    public void upDotPeekIsActive() {
+        Assertions.assertTrue(decompilerPage.getUpDotPeekIsActive(), "Get dotPeek кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка что кнопка скачивание активвна")
-    public void buttonCheck() {
+    public void downloadCheck() {
         Assertions.assertTrue(decompilerPage.checkIfDownloadButtonIsClickable(), "Download кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки What's New")
-    public void WatSNewIsActive() {
+    public void watSNewIsActive() {
         Assertions.assertTrue(decompilerPage.getWatSNewIsActive(), "What's New кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Features")
-    public void FeaturesIsActive() {
+    public void featuresIsActive() {
         Assertions.assertTrue(decompilerPage.getFeaturesIsActive(), "Features кнопка не активна");
 
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Docs & Demos")
-    public void DocsDemosIsActive() {
+    public void docsDemosIsActive() {
         Assertions.assertTrue(decompilerPage.getDocsDemosIsActive(), "Docs & Demos кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки part of dotUltimate")
-    public void PartOfDotUltimateIsActive() {
+    public void partOfDotUltimateIsActive() {
         Assertions.assertTrue(decompilerPage.getPartOfdotUltimateIsActive(), "part of dotUltimate кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки MoreFeatures")
-    public void MoreFeaturesIsActive() {
+    public void moreFeaturesIsActive() {
         Assertions.assertTrue(decompilerPage.getMoreFeaturesIsActive(), "More features кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки ReSharper")
-    public void ReSharperIsActive() {
+    public void reSharperIsActive() {
         Assertions.assertTrue(decompilerPage.getReSharperIsActive(), "ReSharper кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Rider")
-    public void RiderIsActive() {
+    public void riderIsActive() {
         Assertions.assertTrue(decompilerPage.getRiderIsActive(), "Rider кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки ReSharper C++")
-    public void ReSharperCsIsActive() {
+    public void reSharperCsIsActive() {
         Assertions.assertTrue(decompilerPage.getReSharperCIsActive(), "ReSharper C++ кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки dotTrace")
-    public void DotTraceIsActive() {
+    public void dotTraceIsActive() {
         Assertions.assertTrue(decompilerPage.getDotTraceIsActive(), "dotTrace кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки dotMemory")
-    public void DotMemoryIsActive() {
+    public void dotMemoryIsActive() {
         Assertions.assertTrue(decompilerPage.getDotMemoryIsActive(), "dotMemory кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки dotCover")
-    public void DotCoverIsActive() {
+    public void dotCoverIsActive() {
         Assertions.assertTrue(decompilerPage.getDotCoverIsActive(), "dotCover кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки dotPeek")
-    public void dotPeekIsActive() {
-        Assertions.assertTrue(decompilerPage.getdotPeekIsActive(), "dotPeek кнопка не активна");
+    public void downDotPeekIsActive() {
+        Assertions.assertTrue(decompilerPage.getDownDotPeekIsActive(), "dotPeek кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Learn more")
-    public void LearnMoreIsActive() {
+    public void learnMoreIsActive() {
         Assertions.assertTrue(decompilerPage.getLearnMoreIsActive(), "Learn more кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Community forum")
-    public void CommunityForumIsActive() {
+    public void communityForumIsActive() {
         Assertions.assertTrue(decompilerPage.getCommunityForumIsActive(), "Community forum кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Bug and issue tracker")
-    public void BugAndIssueTrackerIsActive() {
+    public void bugAndIssueTrackerIsActive() {
         Assertions.assertTrue(decompilerPage.getBugAndIssueTrackerIsActive(), "Bug and issue tracker кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки .NET Tools blog")
-    public void NetToolsBlogIsActive() {
+    public void netToolsBlogIsActive() {
         Assertions.assertTrue(decompilerPage.getNetToolsBlogIsActive(), ".NET Tools blog кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки @dotpeek on X")
-    public void DotpeekOnXIsActive() {
+    public void dotpeekOnXIsActive() {
         Assertions.assertTrue(decompilerPage.getDotpeekOnXIsActive(), "@dotpeek on X кнопка не активна");
     }
 
     @Test
     @DisplayName("Проверка активности кнопки IntelliJ IDEA")
-    public void IntelliJIDEAIsActive() {
+    public void intelliJIDEAIsActive() {
         Assertions.assertTrue(decompilerPage.getIntellijIdeaIsActive(), "IntelliJ IDEA кнопка не активна");
 
     }
 
     @Test
     @DisplayName("Проверка активности кнопки Privacy & Security")
-    public void PrivacyAndSecurityIsActive() {
+    public void privacyAndSecurityIsActive() {
         Assertions.assertTrue(decompilerPage.getPrivacyAndSecurityIsActive(), "Privacy & Security кнопка не активна");
     }
 
     @Test
     @DisplayName("Открытие страницы Learn more")
-    public void LearnMoreTest() {
+    public void learnMoreTest() {
         String expectedUrl = "https://www.jetbrains.com/dotnet/";
-        String actualUrl = decompilerPage.LearnMoreButtonTransition();
+        String actualUrl = decompilerPage.learnMoreButtonTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
     }
 
@@ -167,24 +167,24 @@ public class DecompilerTest extends BaseTest {
     @DisplayName("Проверка перехода в раздел store")
     public void storeTeamTest() {
         String expectedUrl = "https://www.jetbrains.com/store/?section=commercial&billing=yearly";
-        decompilerPage.LearnMoreButtonTransition();
+        decompilerPage.learnMoreButtonTransition();
         String actualUrl = decompilerTeamsPage.BuyDotUltimateTeamTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
     }
 
     @Test
     @DisplayName("Открытие страницы Privacy & Security")
-    public void PrivacyAndSecurityTest() {
+    public void privacyAndSecurityTest() {
         String expectedUrl = "https://www.jetbrains.com/privacy-security/";
-        String actualUrl = decompilerPage.PrivacyAndSecurityTransition();
+        String actualUrl = decompilerPage.privacyAndSecurityTransition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
     }
 
     @Test
     @DisplayName("Проверка перехода в раздел Our Commitment")
-    public void OurCommitmentTest() {
+    public void ourCommitmentTest() {
         String expectedUrl = "https://www.jetbrains.com/company/commitment/";
-        decompilerPage.PrivacyAndSecurityTransition();
+        decompilerPage.privacyAndSecurityTransition();
         String actualUrl = decompilerTeamsPage.OurCommitmentTeamTeansition();
         assertEquals(expectedUrl, actualUrl, "Итоговый URL не соответствует ожидаемому");
     }
