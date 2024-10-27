@@ -1,0 +1,49 @@
+# Исключение для каталога `target` и `build`
+target/
+build/
+
+### IntelliJ IDEA ###
+.idea/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Системные файлы
+Thumbs.db
+
+# Логи и временные файлы
+*.log
+*.tmp
+logs/
+
+# Конфигурации Maven и Gradle
+.gradle/
+mvnw
+mvnw.cmd
+wrapper/
